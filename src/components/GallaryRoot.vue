@@ -7,6 +7,9 @@
       </div>
       <div class="p-2">{{ card.description }}</div>
     </div>
+    <div class="w-1/4 flex-auto m-2"></div>
+    <div class="w-1/4 flex-auto m-2"></div>
+    <div class="w-1/4 flex-auto m-2"></div>
   </div>
 </template>
 
