@@ -2,7 +2,7 @@
     <div class="m-2 bg-gray-100 border-2 p-2 ">
       <h2 class="p-1">{{ 'Добавить новый объект'}}</h2>
       <label class="p-1">{{'Заголовок*'}}<input v-model="model.title" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" /></label>
-      <i class="fas fa-plus-circle cursor-pointer" @click="attr_num++"></i><label  class="p-1">{{'Добавить пункт'}}</label>
+      <i class="fas fa-plus-circle cursor-pointer" v-tooltip="'Добавить еще'" @click="attr_num++"></i><label  class="p-1">{{'Добавить пункт'}}</label>
       <div v-for="i in attr_num" :key="i">
         <input v-model="model.attributes[i - 1]" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 my-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
       </div>
